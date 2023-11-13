@@ -5,7 +5,6 @@ import Facebook from './icons/Facebook'
 import FooterInput from '../Common/FooterInput'
 import { ROUTES } from '../../constant/route'
 import { useLocation, useNavigate } from 'react-router-dom'
-import ApplySection from './components/Footer/ApplySection'
 import HomePageApplySection from './components/Footer/HomePageApplySection'
 
 const Footer = () => {
@@ -16,11 +15,9 @@ const Footer = () => {
     // footer Start
 
     <footer id="_footer" className="w-full flex flex-col gap-20">
-      <div className={`${location.pathname === ROUTES.HOMEPAGE ? "" : "max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto"} w-full`}>
-      {location.pathname === ROUTES.HOMEPAGE ? 
+      <div className="w-full">
         <HomePageApplySection />
-      : <ApplySection />}
-      <div className={`${location.pathname === ROUTES.HOMEPAGE ? "max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto" : ""}`}>
+      <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto">
           <div className="w-full pt-12 md:pt-20">
             <div className="w-full flex flex-wrap lg:flex-nowrap gap-x-4 justify-between gap-y-12 md:gap-y-20">
               <div className="flex flex-col gap-7 w-full lg:w-60 xl:w-72 2xl:w-96">

@@ -16,17 +16,13 @@ const FaqSection = () => {
     <>
       {faqItems.map((item, index) => (
         <div
+        onClick={() => toggleClick(index)}
           key={index}
-          className={`border-b border-gray-300 py-6 flex flex-col`}
+          className={`border-b border-gray-300 py-6 flex flex-col cursor-pointer`}
         >
           <div className="flex items-center justify-between gap-x-2">
             <Heading text={item.question} />
-            <div
-              onClick={() => toggleClick(index)}
-              className="cursor-pointer"
-            >
               <ArrowDown />
-            </div>
           </div>
           <p className={`text-xs md:text-sm lg:text-base transition-all duration-300 ${
             clickHeading[index] ? 'pt-6 static visible' : 'invisible absolute top-2'

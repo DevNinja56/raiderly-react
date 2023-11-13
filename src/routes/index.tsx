@@ -7,6 +7,9 @@ import { ROUTES } from '../constant/route';
 import FAQ from '../pages/FAQ';
 import Blog from '../pages/Blog';
 import SignIn from '../pages/SIgnIn';
+import SignUp from '../pages/SignUp';
+import ContactUs from '../pages/ContactUs';
+import BlogDetail from '../pages/BlogDetail';
 
 const MainRouter = () => {
   const showMainLayout = true
@@ -33,8 +36,20 @@ const MainRouter = () => {
           element={renderMainLayout(<Blog />)}
         />
         <Route
+          path={ROUTES.BLOG_DETAIL}
+          element={renderMainLayout(<BlogDetail />)}
+        />
+        <Route
           path={ROUTES.SIGN_IN}
           element={<SignIn />}
+        />
+        <Route
+          path={ROUTES.SIGN_UP}
+          element={<SignUp />}
+        />
+        <Route
+          path={ROUTES.CONTACT_US}
+          element={<ContactUs />}
         />
       </Routes>
     </Router>

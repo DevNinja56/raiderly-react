@@ -24,7 +24,7 @@ const HomePage = () => {
     <main id="_Main" className="w-full mb-5 md:mb-0 2xl:mb-40">
       <div className="w-full relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col gap-60 md:gap-52 lg:gap-60 2xl:gap-40">
       <img className="absolute top-0 left-0 w-full object-cover min-h-max h-vh140 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
-      <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative h-vh50 md:h-vh40 lg:h-vh50 2xl:h-vh40">
+      <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative h-0 md:h-vh40 lg:h-vh50 2xl:h-vh40 mb-60 md:mb-0">
       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
       <p className="text-sm md:text-base lg:text-xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
       <div className="relative">
@@ -106,7 +106,7 @@ const HomePage = () => {
         <div className="w-full flex flex-col items-center gap-16">
         <img className="w-full hidden md:block" src="/images/Home/vcFundsImg.svg" />
         <img className="w-full block md:hidden" src="/images/Home/mobileInvestorsMainImg.svg" />
-        <Button className='bg-mainColor text-white cursor-pointer hover:opacity-95 text-sm md:text-base 2xl:text-2xl' padding='px-5 md:px-3 lg:px-9 py-3' text='View all investors & influencers' icon={<Arrow />} />
+        <Button className='hover:bg-mainTextColor bg-mainColor text-white cursor-pointer hover:opacity-95 text-sm md:text-base 2xl:text-2xl' padding='px-5 md:px-3 lg:px-9 py-3' text='View all investors & influencers' icon={<Arrow />} />
         </div>
       </div>
     </section>
@@ -123,7 +123,7 @@ const HomePage = () => {
             <p className="text-sm md:text-base 2xl:text-3xl font-medium text-mainTextColor text-center lg:text-start 2xl:leading-relaxed">Use our built-in AI for message generation, or go the old-fashioned way and write them manually. It's totally up to you.</p>
           </div>
           <div>
-          <Button text='SEND' padding='px-9 py-3' className='bg-mainColor text-white font-medium text-lg 2xl:text-2xl hover:opacity-95 hidden lg:block' icon={""}/>
+          <Button text='SEND' padding='px-9 py-3' className='hover:bg-mainTextColor bg-mainColor text-white font-medium text-lg 2xl:text-2xl hover:opacity-95 hidden lg:block' icon={""}/>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 gap-y-24 md:gap-y-32 lg:gap-y-8 w-full md:w-4/5 lg:w-4/6">
@@ -193,7 +193,7 @@ const HomePage = () => {
     <section id="_workOutOfOutReachSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
       <div className="w-full flex flex-col items-center gap-6 relative">
         <img className="left-0 top-0 w-auto 2xl:w-full" src="/images/Home/workOutOfOutReachSectionImg.svg" />
-        <Button padding='py-3 px-9' className='bg-mainColor text-white text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-5 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<Arrow />} text='Get started' />
+        <Button padding='py-3 px-9' className='hover:bg-mainTextColor bg-mainColor text-white text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-5 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<Arrow />} text='Get started' />
       </div>
     </section>
 
