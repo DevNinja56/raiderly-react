@@ -23,16 +23,16 @@ const HomePage = () => {
 
     <main id="_Main" className="w-full mb-5 md:mb-0 2xl:mb-40">
       <div className="w-full relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col gap-60 md:gap-52 lg:gap-60 2xl:gap-40">
-      <img className="absolute top-0 left-0 w-full object-cover min-h-max h-vh140 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
+      <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-vh140 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
       <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative h-0 md:h-vh40 lg:h-vh50 2xl:h-vh40 mb-60 md:mb-0">
       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
       <p className="text-sm md:text-base lg:text-xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
       <div className="relative">
       <Button padding='py-4 lg:py-5 px-6 lg:px-9' className='hover:bg-mainColor cursor-pointer text-sm md:text-base lg:text-xl bg-mainTextColor text-white' text='Get started for free' icon={<Arrow />}/>
-      <img className="w-6/12 lg:w-auto h-auto absolute inset-x-1/4 -inset-y-12 lg:-inset-y-16" src="/images/Home/menGrabLaptop.svg"/>
+      <img alt='_home' className="w-6/12 lg:w-auto h-auto absolute inset-x-1/4 -inset-y-12 lg:-inset-y-16" src="/images/Home/menGrabLaptop.svg"/>
       </div>
       </div>
-        <img className="w-full z-10" src="/images/Home/MainHomeImage.svg"/>
+        <img alt='_home' className="w-full z-10" src="/images/Home/MainHomeImage.svg"/>
       </div>
     </main>
 
@@ -72,7 +72,7 @@ const HomePage = () => {
         <RaisingMoneyCard img='/images/Home/NEW.svg' text='Up-to-date database and new investor listings every week.'/>
         <RaisingMoneyCard img='/images/Home/Check.svg' text='We verified an info by analyzing previous deals made by investors.'/>
         <RaisingMoneyCard img='/images/Home/Money Bag.svg' text='No «fake» VCs but real investors with available cash to invest.'/>
-        <img className="absolute -bottom-7 right-0 lg:-right-10" src="/images/Home/menClimbingImg.svg" />
+        <img alt='manClimb' className="absolute bottom-0 right-12 -translate-y-1 md:-translate-y-0 md:right-8 lg:right-3 xl:right-0 w-32 md:w-auto h-auto" src="/images/Home/menClimbingImg.svg" />
       </div>
     </div>
     </section>
@@ -98,14 +98,14 @@ const HomePage = () => {
             </div>
             <div className="relative">
             <ArrowDiv className='' text="Search investors by any filter" />
-            <img className="absolute -inset-x-16 md:-inset-x-32 translate-x-3 md:translate-x-1 -top-1 md:-top-3 w-4/12 md:w-auto" src="/images/Home/manGrabBtn.svg" />
+            <img alt='_manGrab' className="absolute -inset-x-16 md:-inset-x-32 translate-x-3 md:translate-x-1 -top-1 md:-top-3 w-4/12 md:w-auto" src="/images/Home/manGrabBtn.svg" />
             </div>
           </div>
           <h1 className="text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug font-bold text-mainTextColor text-center lg:text-start">52,000+ Verified <span className="text-mainColor">Investors</span>, <span className="text-mainColor">Influencers</span> & <span className="text-mainColor">VC</span> funds</h1>
         </div>
         <div className="w-full flex flex-col items-center gap-16">
-        <img className="w-full hidden md:block" src="/images/Home/vcFundsImg.svg" />
-        <img className="w-full block md:hidden" src="/images/Home/mobileInvestorsMainImg.svg" />
+        <img alt='_vc' className="w-full hidden md:block" src="/images/Home/vcFundsImg.svg" />
+        <img alt='_mob' className="w-full block md:hidden" src="/images/Home/mobileInvestorsMainImg.svg" />
         <Button className='hover:bg-mainTextColor bg-mainColor text-white cursor-pointer hover:opacity-95 text-sm md:text-base 2xl:text-2xl' padding='px-5 md:px-3 lg:px-9 py-3' text='View all investors & influencers' icon={<Arrow />} />
         </div>
       </div>
@@ -192,7 +192,7 @@ const HomePage = () => {
 
     <section id="_workOutOfOutReachSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
       <div className="w-full flex flex-col items-center gap-6 relative">
-        <img className="left-0 top-0 w-auto 2xl:w-full" src="/images/Home/workOutOfOutReachSectionImg.svg" />
+        <img alt='_workOutOf' className="left-0 top-0 w-auto 2xl:w-full" src="/images/Home/workOutOfOutReachSectionImg.svg" />
         <Button padding='py-3 px-9' className='hover:bg-mainTextColor bg-mainColor text-white text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-5 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<Arrow />} text='Get started' />
       </div>
     </section>

@@ -12,7 +12,7 @@ const BlogDetail = () => {
           <h1 className='font-extrabold text-mainTextColor text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl text-center leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug w-auto xl:w-11/12'><span className='text-mainColor'>10</span> Steps into Your <span className='text-mainColor'>S</span>uccessful Fundraising</h1>
           <p className='text-sm md:text-base lg:text-2xl 2xl:text-3xl text-mainTextColor font-medium text-center 2xl:leading-normal'>Raising funds can be a challenging task for startup founders. However, by adopting the correct approach you can enhance your chances of success.</p>
         </div>
-        <img className='w-full' src='/images/blogDetail/blogDetailImg.svg' />
+        <img alt='blogDetail' className='w-full' src='/images/blogDetail/blogDetailImg.svg' />
       </div>
     </main>
 
@@ -28,20 +28,24 @@ const BlogDetail = () => {
         <div className='flex flex-col gap-8 lg:gap-12'>
           <div>
             <p><span className='font-semibold'>1: Define Your Fundraising Goals.</span> Start by determining the amount of capital you really need and its intended use. Develop a simple straightforward financial plan that outlines your post-fundraising runway and the goals you plan to achieve with the funds. It's crucial to ensure that the funds raised will suffice to:</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> reach significant milestones required for the next round and secure time for the next fundraising round, or</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> attain profitability and sustainability. During this goal-setting process, don’t think about average venture capital metrics or typical funding round amounts, as these metrics vary widely from one company to another. Sometimes $300k can be enough to move your project to sustainability, while in other cases, you might need $15m just to get started.</p>
+            <ul className="list-disc ml-9">
+            <li>reach significant milestones required for the next round and secure time for the next fundraising round, or</li>
+            <li>attain profitability and sustainability. During this goal-setting process, don’t think about average venture capital metrics or typical funding round amounts, as these metrics vary widely from one company to another. Sometimes $300k can be enough to move your project to sustainability, while in other cases, you might need $15m just to get started.</li>
+            </ul>
           </div>
           <div>
             <p><span className='font-semibold'>2: Craft Your Ideal Investor Profile.</span> Once you've established your fundraising requirements, define the characteristics of investors who are likely to provide you with the funding and who might have an interest in your specific industry. Consider factors such as the type of investor (venture fund or angel investor), focus VC stage, expected investment size, geographical preferences, target industries, and other criteria.</p>
           </div>
           <div>
             <p><span className='font-semibold'>3: Compile a Bullet List of Your Unique Advantages.</span> Now that you have a clear investor profile, prepare a bullet list of compelling reasons why you and your startup deserve investors' attention. Create this list before generating any documents to gain a realistic understanding of your current standing and whether you have sufficient merits to be able have secure funding. In this list, you may include notes on:</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> Your personal background and achievements, such as successful exits.</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> Evidence of product-market fit.</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> Impressive metrics related to your client base, waitlists, and other relevant customer indicators.</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> Comprehensive market insights (maybe something that is not known by everyone).</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> Unique marketing strategies and partnerships you have in your pocket.</p>
-            <p className='flex gap-2 pl-2'><span className='font-semibold md:font-black text-2xl -translate-y-3 md:-translate-y-2 lg:-translate-y-1'>.</span> Any other critical factors that provide a light into your project as an attractive investment opportunity.</p>
+            <ul className="list-disc ml-9">
+            <li>Your personal background and achievements, such as successful exits.</li>
+            <li>Evidence of product-market fit.</li>
+            <li>Impressive metrics related to your client base, waitlists, and other relevant customer indicators.</li>
+            <li>Comprehensive market insights (maybe something that is not known by everyone).</li>
+            <li>Unique marketing strategies and partnerships you have in your pocket.</li>
+            <li>Any other critical factors that provide a light into your project as an attractive investment opportunity.</li>
+            </ul>
           </div>
           <div>
             <p><span className='font-semibold'>4: Craft a Unique Pitch Deck.</span>  Once you’re sure of your list of unique advantages, it’s time to proceed and create a compelling pitch deck that tells your story. Create your pitch deck like a narrative book, and avoid the strict adherence to templates. Don’t hesitate to be unique and creative. Maybe you wanna stop the presentation on slide No. 3 and forward investors to the product demo, or maybe something else. Anyway, ensure that your pitch deck incorporates all the key advantages outlined in the previous step. And structure deck you’d like to real without blind following everyone.</p>

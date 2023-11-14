@@ -33,28 +33,28 @@ const HomeSlider = () => {
         }
       }}
     >
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex justify-center">
         <Card img="/images/Home/sliderUser1.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex items-center justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex items-center justify-center">
         <Card img="/images/Home/sliderUser2.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex justify-center">
         <Card img="/images/Home/sliderUser3.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex items-center justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex items-center justify-center">
         <Card img="/images/Home/sliderUser4.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex justify-center">
         <Card img="/images/Home/sliderUser3.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex items-center justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex items-center justify-center">
         <Card img="/images/Home/sliderUser1.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex justify-center">
         <Card img="/images/Home/sliderUser4.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-vh70 2xl:h-vh50 flex items-center justify-center">
+      <SwiperSlide className="h-vh80 xl:h-vh70 2xl:h-vh50 flex items-center justify-center">
         <Card img="/images/Home/sliderUser2.svg" />
       </SwiperSlide>
     </Swiper>

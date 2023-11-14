@@ -7,7 +7,7 @@ interface propsTypes {
 
 const UsersImg = ({ img, className } : propsTypes) => {
   return (
-    <img className={`${className}`} src={img} />
+    <img alt='_userImg' className={`${className}`} src={img} />
   )
 }
 

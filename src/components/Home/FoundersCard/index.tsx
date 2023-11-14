@@ -6,7 +6,7 @@ interface propsTyes {
 
 const NextGenFoundersCard = ({img} : propsTyes) => {
   return (
-    <img className="min-w-[76px] w-0 md:min-w-0 md:w-1/6 xl:w-auto 2xl:w-52" src={img} />
+    <img alt='_card' className="min-w-[76px] w-0 md:min-w-0 md:w-1/6 xl:w-auto 2xl:w-52" src={img} />
   )
 }
 

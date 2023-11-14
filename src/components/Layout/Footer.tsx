@@ -4,11 +4,10 @@ import Instagram from './icons/Instagram'
 import Facebook from './icons/Facebook'
 import FooterInput from '../Common/FooterInput'
 import { ROUTES } from '../../constant/route'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import HomePageApplySection from './components/Footer/HomePageApplySection'
 
 const Footer = () => {
-  const location = useLocation()
   const navigate = useNavigate()
   return (
 
@@ -22,7 +21,7 @@ const Footer = () => {
             <div className="w-full flex flex-wrap lg:flex-nowrap gap-x-4 justify-between gap-y-12 md:gap-y-20">
               <div className="flex flex-col gap-7 w-full lg:w-60 xl:w-72 2xl:w-96">
                 <div className="flex flex-col gap-y-5">
-                <img className="h-20 w-20 2xl:h-40 2xl:w-40" src="/images/FooterMan.svg" />
+                <img alt='_footerMan' className="h-20 w-20 2xl:h-40 2xl:w-40" src="/images/FooterMan.svg" />
                 <p className="text-xl 2xl:text-3xl font-medium text-mainTextColor">The best platform for finding investors and influencers.</p>
                 </div>
                 <div className="flex items-center gap-4">
@@ -44,8 +43,8 @@ const Footer = () => {
                   <li onClick={() => navigate(ROUTES.PRICING)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">Pricing</li>
                   <li onClick={() => navigate(ROUTES.FAQ)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">FAQ</li>
                   <li onClick={() => navigate(ROUTES.BLOG)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">Blog</li>
-                  <li className="text-mainTextColor hover:text-orange-500 cursor-pointer">Terms of Use</li>
-                  <li className="text-mainTextColor hover:text-orange-500 cursor-pointer">Privacy Policy</li>
+                  <li onClick={() => navigate(ROUTES.TERMSANDCONDITION)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">Terms of Use</li>
+                  <li onClick={() => navigate(ROUTES.PRIVACY_POLICY)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">Privacy Policy</li>
                 </ul>
               </div>
               <div className="gap-5 flex flex-col w-auto md:w-3/5 lg:w-auto">

@@ -1,9 +1,14 @@
 import React from 'react'
 
-const RightManImage = () => {
+interface propsTypes {
+  className : string;
+  imgSize : string;
+}
+
+const RightManImage = ({className, imgSize} : propsTypes) => {
   return (
-    <div className="float-left translate-y-52 max-lg:w-28 max-lg:translate-y-80 max-sm:hidden hidden md:block">
-    <img src="/images/SignIn/halfManr.png" className="w-full" />
+    <div className={`float-left translate-y-52 max-lg:w-28 max-lg:translate-y-80 ${className}`}>
+    <img alt='_man' src="/images/SignIn/halfManr.png" className={imgSize} />
 </div>
   )
 }

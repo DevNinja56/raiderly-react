@@ -7,6 +7,7 @@ import Input from '../../components/Auth/Input'
 import CheckAcount from '../../components/Auth/CheckAcount'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../constant/route'
+import Cross from '../../components/Auth/icons/Cross'
 
 const SignUp = () => {
     const navigate = useNavigate()
@@ -16,10 +17,13 @@ const SignUp = () => {
     {/* Main Section Start */}
 
     <main id='_signUp' className="w-full h-full relative">
-    <img className="absolute left-0 top-0 w-full h-full object-cover" src="/images/SignIn/loginPattern.svg"/>
-    <div className="w-full py-10 z-10 relative min-h-vh100">
-    <LeftManImage />
-    <RightManImage />
+    <div onClick={() => navigate(ROUTES.HOMEPAGE)} className='absolute top-6 md:top-8 left-6 md:left-10 z-20 cursor-pointer'>
+        <Cross />
+    </div>
+    <img alt='pattern' className="absolute left-0 top-0 w-full h-full object-cover" src="/images/SignIn/loginPattern.svg"/>
+    <div className="w-full py-28 md:py-20 lg:py-16 z-10 relative min-h-vh100">
+    <LeftManImage className='max-sm:hidden hidden md:block' imgSize='w-full' />
+    <RightManImage className="hidden md:block max-sm:hidden" imgSize='w-full' />
     <form className="max-md:px-3">
         <div
             className="border rounded-3xl w-2/5 mx-auto max-xl:w-[500px] max-sm:w-full bg-white bg-opacity-50">

@@ -7,4 +7,6 @@ export const ROUTES = {
     FAQ:"/faq",
     BLOG:"/blog",
     BLOG_DETAIL:"/blogDetail",
+    TERMSANDCONDITION:"/termsAndCondition",
+    PRIVACY_POLICY:"/privacyPolicy",
 }
