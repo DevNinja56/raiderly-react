@@ -3,7 +3,11 @@ import Input from '../components/Auth/Input'
 import Button from '../components/Common/Button'
 import Cross from '../components/Auth/icons/Cross'
 
-const ForgotPass = ({setShowForgotModal} : any) => {
+interface ForgotPassProps {
+  setShowForgotModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ForgotPass = ({setShowForgotModal} : ForgotPassProps) => {
   return (
     <div className='fixed top-0 left-0 bg-black bg-opacity-20 h-full w-full flex items-center justify-center'>
         <div className='bg-white rounded-3xl py-12 md:py-20 w-11/12 md:w-10/12 lg:w-7/12 xl:w-6/12 flex justify-center relative'>

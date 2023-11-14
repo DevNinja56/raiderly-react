@@ -5,7 +5,7 @@ import Facebook from './icons/Facebook'
 import FooterInput from '../Common/FooterInput'
 import { ROUTES } from '../../constant/route'
 import { useNavigate } from 'react-router-dom'
-import HomePageApplySection from './components/Footer/HomePageApplySection'
+import ApplySection from './components/Footer/ApplySection'
 
 const Footer = () => {
   const navigate = useNavigate()
@@ -15,7 +15,7 @@ const Footer = () => {
 
     <footer id="_footer" className="w-full flex flex-col gap-20">
       <div className="w-full">
-        <HomePageApplySection />
+        <ApplySection />
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto">
           <div className="w-full pt-12 md:pt-20">
             <div className="w-full flex flex-wrap lg:flex-nowrap gap-x-4 justify-between gap-y-12 md:gap-y-20">
@@ -50,8 +50,8 @@ const Footer = () => {
               <div className="gap-5 flex flex-col w-auto md:w-3/5 lg:w-auto">
                 <h1 className="text-lg 2xl:text-3xl font-semibold">Contact Us</h1>
                 <ul className="gap-4 flex flex-col font-medium text-base 2xl:text-2xl">
-                  <li onClick={() => navigate(ROUTES.CONTACT_US)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">For Investors</li>
-                  <li onClick={() => navigate(ROUTES.CONTACT_US)} className="text-mainTextColor hover:text-orange-500 cursor-pointer">For Influencer</li>
+                  <li onClick={() => navigate(ROUTES.CONTACT_US.replace(':userType', 'investors'), { replace: true })} className="text-mainTextColor hover:text-orange-500 cursor-pointer">For Investors</li>
+                  <li onClick={() => navigate(ROUTES.CONTACT_US.replace(':userType', 'influencers'), { replace: true })} className="text-mainTextColor hover:text-orange-500 cursor-pointer">For Influencer</li>
                 </ul>
               </div>
               </div>

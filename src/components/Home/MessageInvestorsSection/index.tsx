@@ -1,8 +1,8 @@
 import React from 'react'
 import Button from '../../Common/Button'
-import Arrow from '../icons/Arrow'
 import { useNavigate } from 'react-router'
 import { ROUTES } from '../../../constant/route'
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const MessageInvestorsSection = () => {
   const navigate = useNavigate()
@@ -14,7 +14,7 @@ const MessageInvestorsSection = () => {
       </div>
         <p className="text-lg lg:text-2xl font-medium text-mainTextColor">Yes, it's that simple.</p>
         <div onClick={() => navigate(ROUTES.SIGN_IN)}>
-        <Button text='Message investors' padding='px-6 lg:px-9 py-3' className='hover:bg-mainTextColor bg-mainColor text-white font-medium text-base lg:text-lg hover:opacity-95' icon={<Arrow />}/>
+        <Button text='Message investors' padding='px-6 lg:px-9 py-3' className='hover:bg-mainTextColor bg-mainColor text-white font-medium text-base lg:text-lg hover:opacity-95' icon={<FaArrowRightLong />}/>
         </div>
     </div>
   )

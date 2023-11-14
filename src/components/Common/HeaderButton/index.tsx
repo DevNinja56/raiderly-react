@@ -4,7 +4,7 @@ interface buttonProps {
     className: string;
     padding: string;
     text: string;
-    icon: React.ReactElement | any
+    icon: React.ReactElement | string;
 }
 
 const HeaderButton = ({className, text, icon, padding} : buttonProps) => {

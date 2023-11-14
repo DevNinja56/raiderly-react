@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Button from '../../components/Common/Button'
-import Arrow from '../../components/Home/icons/Arrow'
 import NextGenFoundersCard from '../../components/Home/FoundersCard'
 import SearchInvestorsCard from '../../components/Home/SearchInvestorsCard'
 import RaisingMoneyCard from '../../components/Home/RaisingMoneyCard'
@@ -10,6 +9,7 @@ import MessageInvestorsSection from '../../components/Home/MessageInvestorsSecti
 import HomeSlider from '../../components/Sliders/HomeSlider'
 import { useNavigate } from 'react-router'
 import { ROUTES } from '../../constant/route'
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomePage = () => {
 
@@ -27,12 +27,12 @@ const HomePage = () => {
 
     <main id="_Main" className="w-full mb-5 md:mb-0 2xl:mb-40">
       <div className="w-full relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col gap-60 md:gap-52 lg:gap-60 2xl:gap-40">
-      <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-vh140 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
+      <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-5/6 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
       <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative h-0 md:h-vh40 lg:h-vh50 2xl:h-vh40 mb-60 md:mb-0">
       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
       <p className="text-sm md:text-base lg:text-xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
       <div onClick={() => navigate(ROUTES.SIGN_IN)} className="relative">
-      <Button padding='py-4 lg:py-5 px-6 lg:px-9' className='hover:bg-mainColor cursor-pointer text-sm md:text-base lg:text-xl bg-mainTextColor text-white' text='Get started for free' icon={<Arrow />}/>
+      <Button padding='py-4 lg:py-5 px-6 lg:px-9' className='hover:bg-mainColor cursor-pointer text-sm md:text-base lg:text-xl bg-mainTextColor text-white' text='Get started for free' icon={<FaArrowRightLong />}/>
       <img alt='_home' className="w-6/12 lg:w-auto h-auto absolute inset-x-1/4 -inset-y-12 lg:-inset-y-16" src="/images/Home/menGrabLaptop.svg"/>
       </div>
       </div>
@@ -111,7 +111,7 @@ const HomePage = () => {
         <img alt='_vc' className="w-full hidden md:block" src="/images/Home/vcFundsImg.svg" />
         <img alt='_mob' className="w-full block md:hidden" src="/images/Home/mobileInvestorsMainImg.svg" />
         <div onClick={() => navigate(ROUTES.SIGN_IN)}>
-        <Button className='hover:bg-mainTextColor bg-mainColor text-white cursor-pointer hover:opacity-95 text-sm md:text-base 2xl:text-2xl' padding='px-5 md:px-3 lg:px-9 py-3' text='View all investors & influencers' icon={<Arrow />} />
+        <Button className='hover:bg-mainTextColor bg-mainColor text-white cursor-pointer hover:opacity-95 text-sm md:text-base 2xl:text-2xl' padding='px-5 md:px-3 lg:px-9 py-3' text='View all investors & influencers' icon={<FaArrowRightLong />} />
         </div>
         </div>
       </div>
@@ -161,7 +161,7 @@ const HomePage = () => {
           </div>
         <div className="flex flex-col gap-6 items-center w-full md:w-11/12 lg:w-auto">
           <GeneratedByRaiderly />
-          <Button text='SEND' padding='px-9 py-3' className='bg-mainColor text-white font-medium text-lg hover:opacity-95 block lg:hidden' icon={<Arrow />}/>
+          <Button text='SEND' padding='px-9 py-3' className='bg-mainColor text-white font-medium text-lg hover:opacity-95 block lg:hidden' icon={<FaArrowRightLong />}/>
         </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ const HomePage = () => {
       <div className="w-full flex flex-col items-center gap-6 relative">
         <img alt='_workOutOf' className="left-0 top-0 w-auto 2xl:w-full" src="/images/Home/workOutOfOutReachSectionImg.svg" />
         <div onClick={() => navigate(ROUTES.SIGN_IN)}>
-        <Button padding='py-3 px-9' className='hover:bg-mainTextColor bg-mainColor text-white text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-10 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<Arrow />} text='Get started' />
+        <Button padding='py-3 px-9' className='hover:bg-mainTextColor bg-mainColor text-white text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-10 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<FaArrowRightLong />} text='Get started' />
         </div>
       </div>
     </section>

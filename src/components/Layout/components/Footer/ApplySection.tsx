@@ -1,9 +1,9 @@
 import React from 'react'
-import RightArrow from '../../icons/RightArrow'
 import { ROUTES } from '../../../../constant/route'
 import { useNavigate } from 'react-router'
+import { FaArrowRightLong } from "react-icons/fa6";
 
-const HomePageApplySection = () => {
+const ApplySection = () => {
   const navigate = useNavigate()
   return (
     <div className="max-w-contentSmallScreenWidth md:max-w-none md:w-full lg:max-w-contentLargeScreenWidth mx-auto md:mx-0 lg:mx-auto flex items-end overflow-hidden pl-0 md:pl-4 lg:px-0">
@@ -14,7 +14,7 @@ const HomePageApplySection = () => {
           <h1 className="text-white text-center font-bold text-xl md:text-3xl lg:text-3xl xl:text-4xl leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">Let’s discuss make something <span className="text-orange-500 italic">cool</span> together</h1>
           <p onClick={() => navigate(ROUTES.SIGN_IN)} className="flex items-center gap-3 text-white font-semibold text-base md:text-lg hover:text-orange-500 transition-all duration-500 cursor-pointer group border-b-2 border-black border-opacity-0 pb-2 hover:border-orange-500">
           Apply For Meeting
-          <RightArrow className='fill-white stroke-white group-hover:stroke-mainColor group-hover:fill-mainColor text-mainColor transition-all duration-300'/>
+          <FaArrowRightLong className='fill-white stroke-white group-hover:stroke-mainColor group-hover:fill-mainColor text-mainColor transition-all duration-300'/>
           </p>
           </div>
         </div>
@@ -25,4 +25,4 @@ const HomePageApplySection = () => {
   )
 }
 
-export default HomePageApplySection
+export default ApplySection
