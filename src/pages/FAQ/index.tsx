@@ -11,7 +11,7 @@ const FAQ = () => {
       <div className="w-full relative pt-28 pb-20 lg:py-32 2xl:py-40 flex justify-start 2xl:justify-center flex-col gap-28 md:gap-40 lg:gap-32 2xl:gap-0 h-auto">
       <img alt='_faq' className="absolute top-0 left-0 h-full w-full object-cover" src="/images/FAQ/Faq Main Pattern.svg"/>
       <div className="flex flex-col items-center z-10 max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full pt-5 2xl:pt-0">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed w-10/12"><span className="text-mainColor">F</span>requently Asked <span className="text-mainColor">Q</span>uestions</h1>
+      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed w-10/12">Frequently Asked <span className="text-mainColor">Questions</span></h1>
       </div>
       </div>
     </main> 

@@ -34,7 +34,7 @@ const SignIn = () => {
             <div className="px-10 py-10 max-lg:pb-0 max-md:px-4 pb-0 2xl:py-16">
                 <div className="gap-12 grid max-md:gap-12 2xl:gap-16">
                     <div className="flex justify-between">
-                        <SignText spanText='i' text='n'/>
+                        <SignText spanText='in' text=''/>
                         <div onClick={() => navigate(ROUTES.SIGN_UP)}>
                         <CheckAcount account='No Account ?' type='Sign up' />
                         </div>
@@ -47,7 +47,7 @@ const SignIn = () => {
                     <div className="mb-4">
                         <Input label='Enter your Password' placeHolder='Password'/>
                         <p onClick={() => setShowForgotModal(!showForgotModal)} className="cursor-pointer text-right text-xs 2xl:text-xl text-mainTextColor font-light mt-3">Forgot Password</p>
-                        {showForgotModal && <ForgotPass />}
+                        {showForgotModal && <ForgotPass setShowForgotModal={setShowForgotModal} />}
                     </div>
                     <div onClick={() => navigate(ROUTES.HOMEPAGE)}>
                     <Button padding='py-4 2xl:py-6' className='w-full hover:bg-mainTextColor bg-mainColor text-white text-xl 2xl:text-3xl font-medium flex justify-center mb-12' text='Sign in' icon="" />

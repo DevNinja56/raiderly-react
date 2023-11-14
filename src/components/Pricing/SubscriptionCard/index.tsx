@@ -1,6 +1,8 @@
 import React from 'react'
 import RequirementBox from '../RequirementBox'
 import Button from '../../Common/Button'
+import { ROUTES } from '../../../constant/route';
+import { useNavigate } from 'react-router';
 
 interface Requirement {
   text: string;
@@ -34,6 +36,7 @@ const SubscriptionCard = ({
   requirementTextColor,
   requirements,
 }: propsTypes) => {
+  const navigate = useNavigate()
   return (
     <div className={`w-full rounded-3xl relative overflow-hidden pb-16 lg:pb-5 ${subscriptionsDivBackground} flex flex-col justify-between`}>
       <div className={`absolute right-0 -translate-y-5 translate-x-5 h-32 w-32 md:h-36 md:w-36 rounded-full flex items-center justify-center ${diamondBackground}`}>
@@ -56,7 +59,7 @@ const SubscriptionCard = ({
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center px-5">
+      <div onClick={() => navigate(ROUTES.SIGN_IN)} className="w-full flex justify-center px-5">
         <Button padding='py-3 lg:py-4 px-9' className={`${buttonStyling} text-base lg:text-xl w-full lg:w-auto flex justify-center`} text='Get Started' icon="" />
       </div>
     </div>

@@ -9,7 +9,7 @@ const BlogDetail = () => {
     <main id='_main' className='w-full mb-12 md:mb-20 lg:mb-20 2xl:mb-40'>
       <div className='pt-28 lg:pt-40 2xl:pt-60 max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto flex flex-col items-center gap-8 md:gap-20'>
         <div className='flex flex-col items-center gap-3 w-11/12 xl:w-10/12'>
-          <h1 className='font-extrabold text-mainTextColor text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl text-center leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug w-auto xl:w-11/12'><span className='text-mainColor'>10</span> Steps into Your <span className='text-mainColor'>S</span>uccessful Fundraising</h1>
+          <h1 className='font-extrabold text-mainTextColor text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl text-center leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug w-auto xl:w-11/12'>10 Steps into Your <span className='text-mainColor'>Successful</span> Fundraising</h1>
           <p className='text-sm md:text-base lg:text-2xl 2xl:text-3xl text-mainTextColor font-medium text-center 2xl:leading-normal'>Raising funds can be a challenging task for startup founders. However, by adopting the correct approach you can enhance your chances of success.</p>
         </div>
         <img alt='blogDetail' className='w-full' src='/images/blogDetail/blogDetailImg.svg' />

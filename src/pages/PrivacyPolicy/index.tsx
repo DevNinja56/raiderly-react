@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
         <img alt='t&c' className="absolute top-0 left-0 h-full w-full object-cover" src="/images/FAQ/Faq Main Pattern.svg"/>
         <LeftManImage className='absolute right-0 top-56 md:top-44 lg:top-28 xl:top-32 2xl:top-48 flex justify-end' imgSize='w-7/12 md:w-full' />
         <div className="flex flex-col items-center z-10 max-w-full md:max-w-contentLargeScreenWidth mx-auto w-full pt-5 2xl:pt-0">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed w-10/12"><span className="text-mainColor">P</span>rivacy <span className="text-mainColor">P</span>olicy</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed w-10/12">Privacy <span className="text-mainColor">Policy</span></h1>
         </div>
         </div>
       </main> 

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Select, { StylesConfig, type DropdownIndicatorProps, components } from 'react-select';
 import ArrowDown from './icons/ArrowDown';
+import { useNavigate } from 'react-router';
+import { ROUTES } from '../../constant/route';
 
 const customStyles: StylesConfig = {
   control: (provided) => ({
@@ -52,12 +54,34 @@ const DropdownIndicator: React.FC<DropdownIndicatorProps> = props => {
   };
 
 const SelectBox = () => {
+  const navigate = useNavigate();
+  const [selectedOption, setSelectedOption] = useState<any>(null);
+
+  const handleOptionChange = (selected : any) => {
+    setSelectedOption(selected);
+    if (selected.value === 'Investors') {
+      navigate(ROUTES.CONTACT_US);
+    } else if (selected.value === 'Influencers') {
+      navigate(ROUTES.CONTACT_US);
+    }
+  };
+
+  useEffect(() => {
+    const currentRoute = window.location.pathname;
+    if (currentRoute === ROUTES.CONTACT_US) {
+      setSelectedOption(options[0]);
+    } else if (currentRoute === ROUTES.CONTACT_US) {
+      setSelectedOption(options[1]);
+    }
+  }, []);
   return (
     <Select
-      options={options}
-      placeholder="Select Option"
-      styles={customStyles}
-      components={{ DropdownIndicator }}
+    options={options}
+    value={selectedOption}
+    onChange={handleOptionChange}
+    placeholder="Select Option"
+    styles={customStyles}
+    components={{ DropdownIndicator }}
     />
   );
 };

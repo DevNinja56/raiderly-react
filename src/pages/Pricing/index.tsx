@@ -2,8 +2,11 @@ import React from 'react'
 import Button from '../../components/Common/Button'
 import SubscriptionCard from '../../components/Pricing/SubscriptionCard'
 import MoreDetails from '../../components/Pricing/MoreDetailSection'
+import { ROUTES } from '../../constant/route'
+import { useNavigate } from 'react-router'
 
 const Pricing = () => {
+  const navigate = useNavigate()
   return (
 
     <>
@@ -13,7 +16,7 @@ const Pricing = () => {
     <main id="_main" className="w-full mb-8 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col items-center gap-28 md:gap-40 lg:gap-32 2xl:gap-0">
       <div className="flex flex-col items-center z-10">
-      <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed w-4/5">The Right <span className="text-mainColor">P</span>lan For Your <span className="text-mainColor">B</span>usiness</h1>
+      <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed w-4/5">The Right <span className="text-mainColor">Plan</span> For Your <span className="text-mainColor">Business</span></h1>
       <p className="text-sm md:text-base lg:text-xl 2xl:text-3xl font-medium text-mainTextColor text-center mb-12">Founder-friendly pricing. Designed to bring you to success.</p>
       </div>
       </div>
@@ -101,7 +104,7 @@ const Pricing = () => {
 
     <section id="_moreDetailSection" className="w-full mb-8 md:mb-20 lg:mb-32 2xl:mb-52 hidden lg:block">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col items-center gap-12 lg:gap-20">
-        <h1 className="text-5xl xl:text-6xl font-bold text-mainTextColor leading-snug md:leading-snug lg:leading-snug">More <span className="text-mainColor">D</span>etails About Our <span className="text-mainColor">P</span>ricing</h1>
+        <h1 className="text-5xl xl:text-6xl font-bold text-mainTextColor leading-snug md:leading-snug lg:leading-snug">More <span className="text-mainColor">Details</span> About Our <span className="text-mainColor">Pricing</span></h1>
         <div className="flex flex-col items-center gap-12 w-full">
           <MoreDetails />
           <p className="text-xl font-medium text-mainTextColor">*You can buy extra export rows & messages anytime you want.</p>
@@ -115,8 +118,10 @@ const Pricing = () => {
 
     <section id="_startingWithRaiderlySection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col items-center gap-8 lg:gap-12">
-        <h1 className="text-2xl lg:text-3xl 2xl:text-5xl font-bold text-mainTextColor text-center">Starting With <span className="text-mainColor">R</span>aiderly Is <span className="text-mainColor">E</span>asy, <span className="text-mainColor">F</span>ast, And <span className="text-mainColor">F</span>ree.</h1>
+        <h1 className="text-2xl lg:text-3xl 2xl:text-5xl font-bold text-mainTextColor text-center">Starting With <span className="text-mainColor">Raiderly</span> Is <span className="text-mainColor">Easy</span>, <span className="text-mainColor">Fast</span>, And <span className="text-mainColor">Free</span>.</h1>
+        <div onClick={() => navigate(ROUTES.SIGN_IN) }>
         <Button padding='py-3 lg:py-4 px-9' className='hover:bg-mainTextColor bg-mainColor text-base lg:text-xl text-white' text='Get Started' icon=""/>
+        </div>
       </div>  
     </section>
 

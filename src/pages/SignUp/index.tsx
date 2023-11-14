@@ -30,7 +30,7 @@ const SignUp = () => {
             <div className="px-10 py-10 max-lg:pb-0 max-md:px-4 pb-0 2xl:py-16">
                 <div className="gap-12 grid max-md:gap-12 2xl:gap-16">
                     <div className="flex justify-between">
-                        <SignText spanText='u' text='p'/>
+                        <SignText spanText='up' text=''/>
                         <div onClick={() => navigate(ROUTES.SIGN_IN)}>
                         <CheckAcount account='Have an Account ?' type='Sign in' />
                         </div>
