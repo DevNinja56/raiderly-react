@@ -33,28 +33,28 @@ const HomeSlider = () => {
         }
       }}
     >
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex justify-center">
+      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 flex justify-center">
         <Card img="/images/Home/sliderUser1.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex items-center justify-center">
+      <SwiperSlide className="pb-20 md:pb-20 2xl:pb-10 pt-20 flex items-center justify-center">
         <Card img="/images/Home/sliderUser2.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex justify-center">
+      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 flex justify-center">
         <Card img="/images/Home/sliderUser3.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex items-center justify-center">
+      <SwiperSlide className="pb-20 md:pb-20 2xl:pb-10 pt-20 flex items-center justify-center">
         <Card img="/images/Home/sliderUser4.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex justify-center">
+      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 flex justify-center">
         <Card img="/images/Home/sliderUser3.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex items-center justify-center">
+      <SwiperSlide className="pb-20 md:pb-20 2xl:pb-10 pt-20 flex items-center justify-center">
         <Card img="/images/Home/sliderUser1.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex justify-center">
+      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 flex justify-center">
         <Card img="/images/Home/sliderUser4.svg" />
       </SwiperSlide>
-      <SwiperSlide className="h-auto pb-20 md:pb-5 2xl:pb-10 md:h-vh70 xl:h-vh50 2xl:h-vh40 flex items-center justify-center">
+      <SwiperSlide className="pb-20 md:pb-20 2xl:pb-10 pt-20 flex items-center justify-center">
         <Card img="/images/Home/sliderUser2.svg" />
       </SwiperSlide>
     </Swiper>

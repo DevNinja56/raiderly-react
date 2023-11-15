@@ -26,9 +26,9 @@ const HomePage = () => {
     {/* Main Section Start */}
 
     <main id="_Main" className="w-full mb-5 md:mb-0 2xl:mb-40">
-      <div className="w-full relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col gap-60 md:gap-52 lg:gap-60 2xl:gap-40">
+      <div className="w-full relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col">
       <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-5/6 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
-      <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative h-0 md:h-vh40 lg:h-vh50 2xl:h-vh40 mb-60 md:mb-0">
+      <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative mb-12">
       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
       <p className="text-sm md:text-base lg:text-xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
       <div onClick={() => navigate(ROUTES.SIGN_IN)} className="relative">
@@ -188,7 +188,9 @@ const HomePage = () => {
     <section id="_sliderSection" className="w-full mb-16 md:mb-28 lg:mb-20 2xl:mb-60">
       <div className="w-full lg:max-w-contentLargeScreenWidth mx-auto flex flex-col items-center gap-20">
         <h1 className="max-w-contentSmallScreenWidth text-center font-bold text-2xl md:text-4xl lg:text-6xl text-mainTextColor leading-snug md:leading-snug lg:leading-snug">Trusted by 3,000<span className="text-mainColor">+</span> founders from all industries</h1>
+        <div className='w-full'>
         <HomeSlider />
+        </div>
       </div>
     </section>
 
