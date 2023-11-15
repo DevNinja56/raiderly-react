@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SideBar from '../Sidebar'
 import Logo from '../Common/MainLogo'
 import HeaderButton from '../Common/HeaderButton'
@@ -11,6 +11,10 @@ const Header = () => {
   const [sideBar,setSideBar] = useState(false)
 
   const navigate = useNavigate()
+
+  useEffect(() => {
+    setSideBar(false);
+  }, [navigate]);
 
   return (
 
