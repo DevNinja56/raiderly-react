@@ -17,7 +17,7 @@ const ContactUs = () => {
 
     <main id='_contactUs' className="w-full h-full relative">
     <div onClick={() => navigate(ROUTES.HOMEPAGE)} className='absolute top-6 md:top-8 left-6 md:left-10 z-20 cursor-pointer'>
-        <Cross />
+        <Cross className='' />
     </div>
     <img alt='_contact' className="absolute left-0 top-0 w-full h-full object-cover" src="/images/SignIn/loginPattern.svg"/>
     <div className="w-full py-28 md:py-20 lg:py-16 z-10 relative min-h-vh100">
@@ -27,7 +27,7 @@ const ContactUs = () => {
         <div
             className="border rounded-3xl w-2/5 mx-auto max-xl:w-[500px] max-sm:w-full bg-white bg-opacity-50">
             <div className="px-10 py-10 max-lg:pb-0 max-md:px-4 pb-0 2xl:py-16">
-                <div className="gap-6 grid max-md:gap-6 2xl:gap-16">
+                <div className="gap-6 grid max-md:gap-6 2xl:gap-16 w-full">
                     <h1 className='font-semibold text-4xl text-mainTextColor text-center'>Contact Us</h1>
                     <div className='flex justify-center w-full'>
                     <SelectBox />

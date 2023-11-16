@@ -119,7 +119,7 @@ const Pricing = () => {
     <section id="_startingWithRaiderlySection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col items-center gap-8 lg:gap-12">
         <h1 className="text-2xl lg:text-3xl 2xl:text-5xl font-bold text-mainTextColor text-center">Starting With <span className="text-mainColor">Raiderly</span> Is <span className="text-mainColor">Easy</span>, <span className="text-mainColor">Fast</span>, And <span className="text-mainColor">Free</span>.</h1>
-        <div onClick={() => navigate(ROUTES.SIGN_IN) }>
+        <div onClick={() => navigate(ROUTES.SIGN_UP) }>
         <Button padding='py-3 lg:py-4 px-9' className='hover:bg-mainTextColor bg-mainColor text-base lg:text-xl text-white' text='Get Started' icon=""/>
         </div>
       </div>  

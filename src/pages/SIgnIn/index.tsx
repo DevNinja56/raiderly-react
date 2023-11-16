@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../constant/route'
 import ForgotPass from '../../modal/ForgotPass'
 import Cross from '../../components/Auth/icons/Cross'
+import SignInWithGoogle from '../../components/Auth/SignInWithGoogle'
 
 const SignIn = () => {
     const navigate = useNavigate()
@@ -22,7 +23,7 @@ const SignIn = () => {
 
     <main id='_signIn' className="w-full h-full relative">
     <div onClick={() => navigate(ROUTES.HOMEPAGE)} className='absolute top-6 md:top-8 left-6 md:left-10 z-20 cursor-pointer'>
-        <Cross />
+        <Cross className='' />
     </div>
     <img alt='_signIn' className="absolute left-0 top-0 w-full h-full object-cover" src="/images/SignIn/loginPattern.svg"/>
     <div className="w-full py-28 md:py-20 lg:py-16 z-10 relative min-h-vh100">
@@ -39,10 +40,7 @@ const SignIn = () => {
                         <CheckAcount account='No Account ?' type='Sign up' />
                         </div>
                     </div>
-                    <div className="flex justify-center items-center gap-4 cursor-pointer transition-all duration-300 hover:bg-opacity-95 hover:bg-blue-100 bg-blue-500 bg-opacity-10 py-3 md:py-4 rounded-full">
-                        <span><img alt='_google' className="h-auto w-auto 2xl:h-12 2xl:w-12" src="/images/SignIn/google.png" /></span>
-                        <span className="text-sm 2xl:text-2xl text-blue-400">Sign in with Google</span>
-                    </div>
+                    <SignInWithGoogle />
                         <Input label='Enter your username or email address' placeHolder="Username or email address" />
                     <div className="mb-4">
                         <Input label='Enter your Password' placeHolder='Password'/>

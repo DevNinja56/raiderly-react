@@ -30,8 +30,8 @@ const HomePage = () => {
       <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-5/6 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
       <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative mb-12">
       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
-      <p className="text-sm md:text-base lg:text-xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
-      <div onClick={() => navigate(ROUTES.SIGN_IN)} className="relative">
+      <p className="text-sm md:text-base lg:text-xl 2xl:text-2xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
+      <div onClick={() => navigate(ROUTES.SIGN_UP)} className="relative">
       <Button padding='py-4 lg:py-5 px-6 lg:px-9' className='hover:bg-mainColor cursor-pointer text-sm md:text-base lg:text-xl bg-mainTextColor text-white' text='Get started for free' icon={<FaArrowRightLong />}/>
       <img alt='_home' className="w-6/12 lg:w-auto h-auto absolute inset-x-1/4 -inset-y-12 lg:-inset-y-16" src="/images/Home/menGrabLaptop.svg"/>
       </div>
@@ -47,7 +47,7 @@ const HomePage = () => {
     <section id="_nextGenSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60 z-20 relative">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full">
         <div className="w-full bg-lightOrangeColor rounded-2xl flex flex-col items-center gap-10 2xl:gap-24 py-5 md:py-10 2xl:py-20 px-3 md:px-5 2xl:px-10">
-          <p className="text-mainTextColor font-semibold text-lg md:text-2xl 2xl:text-4xl text-center">Trusted by next gen founders from</p>
+          <p className="text-mainTextColor font-semibold text-lg md:text-2xl 2xl:text-5xl text-center">Trusted by next gen founders from</p>
           <div className="flex flex-wrap gap-x-4 gap-y-8 md:gap-0 md:flex-nowrap items-center justify-center md:justify-between 2xl:justify-between w-full px-0 md:px-5">
             <NextGenFoundersCard img='/images/Home/combinator.svg' />
             <NextGenFoundersCard img='/images/Home/techStars.svg' />
@@ -110,7 +110,7 @@ const HomePage = () => {
         <div className="w-full flex flex-col items-center gap-16">
         <img alt='_vc' className="w-full hidden md:block" src="/images/Home/vcFundsImg.svg" />
         <img alt='_mob' className="w-full block md:hidden" src="/images/Home/mobileInvestorsMainImg.svg" />
-        <div onClick={() => navigate(ROUTES.SIGN_IN)}>
+        <div onClick={() => navigate(ROUTES.SIGN_UP)}>
         <Button className='hover:bg-mainTextColor bg-mainColor text-white cursor-pointer hover:opacity-95 text-sm md:text-base 2xl:text-2xl' padding='px-5 md:px-3 lg:px-9 py-3' text='View all investors & influencers' icon={<FaArrowRightLong />} />
         </div>
         </div>
@@ -128,7 +128,7 @@ const HomePage = () => {
             <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug text-center lg:text-start"><span className="text-mainColor">Craft</span> your message</h1>
             <p className="text-sm md:text-base 2xl:text-3xl font-medium text-mainTextColor text-center lg:text-start 2xl:leading-relaxed">Use our built-in AI for message generation, or go the old-fashioned way and write them manually. It's totally up to you.</p>
           </div>
-          <div onClick={() => navigate(ROUTES.SIGN_IN)}>
+          <div onClick={() => navigate(ROUTES.SIGN_UP)}>
           <Button text='SEND' padding='px-9 py-3' className='hover:bg-mainTextColor bg-mainColor text-white font-medium text-lg 2xl:text-2xl hover:opacity-95 hidden lg:block' icon={""}/>
           </div>
         </div>
@@ -201,8 +201,8 @@ const HomePage = () => {
     <section id="_workOutOfOutReachSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
       <div className="w-full flex flex-col items-center gap-6 relative">
         <img alt='_workOutOf' className="left-0 top-0 w-auto 2xl:w-full" src="/images/Home/workOutOfOutReachSectionImg.svg" />
-        <div onClick={() => navigate(ROUTES.SIGN_IN)}>
-        <Button padding='py-3 px-9' className='hover:bg-mainTextColor bg-mainColor text-white text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-10 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<FaArrowRightLong />} text='Get started' />
+        <div onClick={() => navigate(ROUTES.SIGN_UP)}>
+        <Button padding='py-3 md:py-2 lg:py-3 2xl:py-4 px-6 lg:px-9' className='hover:bg-mainTextColor bg-mainColor text-white text-sm md:text-base lg:text-lg 2xl:text-3xl font-medium static md:absolute bottom-10 lg:bottom-10 xl:bottom-12 2xl:bottom-16 left-2/4 translate-x-0 md:-translate-x-24 xl:-translate-x-32' icon={<FaArrowRightLong />} text='Get started' />
         </div>
       </div>
     </section>

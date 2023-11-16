@@ -29,7 +29,7 @@ const Header = () => {
             <h2 onClick={() => navigate(ROUTES.FAQ)} className="hover:text-mainColor cursor-pointer">FAQ</h2>
           </div>
         </div>
-        <div onClick={() => navigate(ROUTES.SIGN_IN)}>
+        <div onClick={() => navigate(ROUTES.SIGN_UP)}>
         <HeaderButton className="hidden lg:block bg-white hover:bg-mainColor hover:border-mainColor cursor-pointer hover:text-white transition-all duration-200" text='Sign Up' icon="" padding='py-ten 2xl:py-5 px-5 2xl:px-10'/>
         </div>
         <div className="block lg:hidden" onClick={() => setSideBar(!sideBar)}>

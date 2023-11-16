@@ -10,9 +10,9 @@ interface ForgotPassProps {
 const ForgotPass = ({setShowForgotModal} : ForgotPassProps) => {
   return (
     <div className='fixed top-0 left-0 bg-black bg-opacity-20 h-full w-full flex items-center justify-center'>
-        <div className='bg-white rounded-3xl py-12 md:py-20 w-11/12 md:w-10/12 lg:w-7/12 xl:w-6/12 flex justify-center relative'>
-          <div onClick={() => setShowForgotModal(false)} className='absolute right-4 top-4'>
-            <Cross />
+        <div className='bg-white rounded-2xl md:rounded-3xl pt-12 pb-7 md:py-20 w-11/12 md:w-10/12 lg:w-7/12 xl:w-6/12 flex justify-center relative'>
+          <div onClick={() => setShowForgotModal(false)} className='absolute -right-4 md:right-4 top-3 md:top-4'>
+            <Cross className='w-6/12 h-auto md:w-auto' />
           </div>
             <div className='w-11/12 md:w-9/12 lg:w-8/12 flex flex-col gap-10'>
                 <Input label='Enter your username or email address' placeHolder='Username or email address' />

@@ -6,6 +6,7 @@ import { useLocation } from 'react-router';
 const customStyles: StylesConfig = {
   control: (provided) => ({
     ...provided,
+    cursor:"pointer",
     backgroundColor: 'white',
     border: "1px solid rgba(0, 0, 0, 0.25)",
     borderRadius: '61px',
@@ -28,14 +29,24 @@ const customStyles: StylesConfig = {
   }),
   menu: (provided) => ({
     ...provided,
+    marginTop:"5px",
     borderRadius:"14px",
-    padding:"0px",
   }),
-  option: (provided) => ({
+  menuList: (provided) => ({
     ...provided,
-    paddingTop:"16px",
-    paddingBottom:"16px",
-    borderBottom:"1px solid rgba(0, 0, 0, 0.25)"
+    paddingTop: 0,
+    paddingBottom: 0,
+    borderRadius:"14px",
+  }),
+  option: (provided,state) => ({
+    ...provided,
+    paddingTop:"20px",
+    paddingLeft:"30px",
+    paddingBottom:"20px",
+    fontWeight:"600",
+    backgroundColor: state.isSelected ? "#FF74251A" : "white",
+    color:"black",
+    cursor:"pointer",
   })
 };
 
@@ -59,6 +70,7 @@ const SelectBox = () => {
 
   const defaultValue = options.find(option => option.value === userType);
   return (
+    <div className='w-7/12'>
     <Select
       options={options}
       placeholder="Select Option"
@@ -66,6 +78,7 @@ const SelectBox = () => {
       components={{ DropdownIndicator }}
       defaultValue={defaultValue}
     />
+    </div>
   );
 };
 

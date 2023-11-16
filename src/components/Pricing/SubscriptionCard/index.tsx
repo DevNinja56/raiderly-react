@@ -59,7 +59,7 @@ const SubscriptionCard = ({
           </div>
         </div>
       </div>
-      <div onClick={() => navigate(ROUTES.SIGN_IN)} className="w-full flex justify-center px-5">
+      <div onClick={() => navigate(ROUTES.SIGN_UP)} className="w-full flex justify-center px-5">
         <Button padding='py-3 lg:py-4 px-9' className={`${buttonStyling} text-base lg:text-xl w-full lg:w-auto flex justify-center`} text='Get Started' icon="" />
       </div>
     </div>

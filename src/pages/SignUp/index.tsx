@@ -8,6 +8,7 @@ import CheckAcount from '../../components/Auth/CheckAcount'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../constant/route'
 import Cross from '../../components/Auth/icons/Cross'
+import SignInWithGoogle from '../../components/Auth/SignInWithGoogle'
 
 const SignUp = () => {
     const navigate = useNavigate()
@@ -18,7 +19,7 @@ const SignUp = () => {
 
     <main id='_signUp' className="w-full h-full relative">
     <div onClick={() => navigate(ROUTES.HOMEPAGE)} className='absolute top-6 md:top-8 left-6 md:left-10 z-20 cursor-pointer'>
-        <Cross />
+        <Cross className='' />
     </div>
     <img alt='pattern' className="absolute left-0 top-0 w-full h-full object-cover" src="/images/SignIn/loginPattern.svg"/>
     <div className="w-full py-28 md:py-20 lg:py-16 z-10 relative min-h-vh100">
@@ -40,8 +41,9 @@ const SignUp = () => {
                         <Input label='User Name' placeHolder='User name' />
                         <Input label='Contact Number' placeHolder='Contact Number' />
                     </div>
-                        <Input label='Enter your Password' placeHolder='Password'/>
-                    <div onClick={() => navigate(ROUTES.SIGN_IN)}>
+                    <Input label='Enter your Password' placeHolder='Password'/>
+                    <div className='flex flex-col gap-5 2xl:gap-10' onClick={() => navigate(ROUTES.SIGN_IN)}>
+                    <SignInWithGoogle />
                     <Button padding='py-4 2xl:py-6' className='w-full hover:bg-mainTextColor bg-mainColor text-white text-xl 2xl:text-3xl font-medium flex justify-center mb-12' text='Sign up' icon="" />
                     </div>
                 </div>
