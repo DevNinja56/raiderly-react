@@ -25,8 +25,8 @@ const HomePage = () => {
 
     {/* Main Section Start */}
 
-    <main id="_Main" className="w-full mb-5 md:mb-0 2xl:mb-40">
-      <div className="w-full relative pt-28 lg:pt-40 2xl:pt-80 flex flex-col">
+    <main id="_Main" className="w-full mb-5 md:mb-20 2xl:mb-40">
+      <div className="w-full relative pt-28 lg:pt-28 2xl:pt-60 flex flex-col">
       <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-5/6 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
       <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative mb-12">
       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
@@ -36,30 +36,11 @@ const HomePage = () => {
       <img alt='_home' className="w-6/12 lg:w-auto h-auto absolute inset-x-1/4 -inset-y-12 lg:-inset-y-16" src="/images/Home/menGrabLaptop.svg"/>
       </div>
       </div>
-        <img alt='_home' className="w-full z-10" src="/images/Home/MainHomeImage.svg"/>
+        <img alt='_home' className="w-full z-10" src="/images/Home/MainHomeImage.png"/>
       </div>
     </main>
 
     {/* Main Section End */}
-
-    {/* Trusted By Next Gen Section Start */}
-
-    <section id="_nextGenSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60 z-20 relative">
-      <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full">
-        <div className="w-full bg-lightOrangeColor rounded-2xl flex flex-col items-center gap-10 2xl:gap-24 py-5 md:py-10 2xl:py-20 px-3 md:px-5 2xl:px-10">
-          <p className="text-mainTextColor font-semibold text-lg md:text-2xl 2xl:text-5xl text-center">Trusted by next gen founders from</p>
-          <div className="flex flex-wrap gap-x-4 gap-y-8 md:gap-0 md:flex-nowrap items-center justify-center md:justify-between 2xl:justify-between w-full px-0 md:px-5">
-            <NextGenFoundersCard img='/images/Home/combinator.svg' />
-            <NextGenFoundersCard img='/images/Home/techStars.svg' />
-            <NextGenFoundersCard img='/images/Home/productHunt.svg' />
-            <NextGenFoundersCard img='/images/Home/antler.svg' />
-            <NextGenFoundersCard img='/images/Home/indieHackers.svg' />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* Trusted By Next Gen Section End */}
 
     {/* Raising Money Section Start */}
 
@@ -76,7 +57,7 @@ const HomePage = () => {
         <RaisingMoneyCard img='/images/Home/NEW.svg' text='Up-to-date database and new investor listings every week.'/>
         <RaisingMoneyCard img='/images/Home/Check.svg' text='We verified an info by analyzing previous deals made by investors.'/>
         <RaisingMoneyCard img='/images/Home/Money Bag.svg' text='No «fake» VCs but real investors with available cash to invest.'/>
-        <img alt='manClimb' className="absolute bottom-0 right-12 -translate-y-1 md:-translate-y-0 md:right-8 lg:right-3 xl:right-0 w-32 md:w-auto h-auto" src="/images/Home/menClimbingImg.svg" />
+        <img alt='manClimb' className="absolute bottom-0 right-12 -translate-y-1 md:-translate-y-0 md:right-8 lg:right-10 xl:right-0 w-32 md:w-auto h-auto" src="/images/Home/menClimbingImg.svg" />
       </div>
     </div>
     </section>
