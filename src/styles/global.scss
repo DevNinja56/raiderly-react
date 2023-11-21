@@ -16,3 +16,126 @@
     margin: 0;
     padding: 0;
   }
+
+  .manClimb {
+    right: 12px;
+  }
+
+  @media (min-width: 400px) and (max-width: 450px) {
+    .sittingMan{
+        left: 30% !important;
+  }
+}
+
+  @media (min-width: 451px) and (max-width: 666px) {
+    .sittingMan{
+        left: 35% !important;
+  }
+}
+
+  @media (min-width: 667px) and (max-width: 767px) {
+    .sittingMan{
+        left: 38% !important;
+  }
+}
+
+  @media (min-width: 320px) and (max-width: 469px) {
+    .manClimb{
+        right: 40px !important;
+  }
+}
+
+  @media (min-width: 800px) and (max-width: 849px) {
+    .manClimb{
+        right: 60px !important;
+  }
+}
+
+  @media (min-width: 850px) and (max-width: 899px) {
+    .manClimb{
+        right: 80px !important;
+  }
+}
+
+  @media (min-width: 900px) and (max-width: 947px) {
+    .manClimb{
+        right: 100px !important;
+  }
+}
+
+  @media (min-width: 1024px) and (max-width: 1197px) {
+    .manClimb{
+        right: 40px !important;
+  }
+}
+  @media (min-width: 1198px) and (max-width: 1261px) {
+    .manClimb{
+        right: 50px !important;
+  }
+}
+
+  @media (min-width: 1262px) and (max-width: 1299px) {
+    .manClimb{
+        right: -30px !important;
+  }
+}
+
+  @media (min-width: 1300px) and (max-width: 1399px) {
+    .manClimb{
+        right: 0px !important;
+  }
+}
+
+  @media (min-width: 1400px) and (max-width: 1535px) {
+    .manClimb{
+        right: 20px !important;
+  }
+}
+
+  @media (min-width: 1536px) and (max-width: 1599px) {
+    .manClimb{
+        right: -50px !important;
+  }
+}
+
+  @media (min-width: 1600px) and (max-width: 1699px) {
+    .manClimb{
+        right: -30px !important;
+  }
+}
+
+  @media (min-width: 1700px) and (max-width: 1800px) {
+    .manClimb{
+        right: -10px !important;
+  }
+}
+
+  @media (min-width: 1801px) and (max-width: 1999px) {
+    .manClimb{
+        right: 20px !important;
+  }
+}
+  
+  @media (min-width: 2000px) and (max-width: 2176px) {
+      .manClimb{
+          right: 50px !important;
+    }
+  }
+  @media (min-width: 2176px) and (max-width: 2300px) {
+    .manClimb
+    {
+        right: -80px !important;
+    }
+}
+@media (min-width: 2300px) and (max-width: 2400px) {
+    .manClimb
+    {
+        right: -50px !important;
+    }
+}
+@media (min-width: 2400px) and (max-width: 2500px) {
+    .manClimb
+    {
+        right: -40px !important;
+    }
+}

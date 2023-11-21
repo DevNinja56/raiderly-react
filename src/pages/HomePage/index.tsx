@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Button from '../../components/Common/Button'
-import NextGenFoundersCard from '../../components/Home/FoundersCard'
 import SearchInvestorsCard from '../../components/Home/SearchInvestorsCard'
 import RaisingMoneyCard from '../../components/Home/RaisingMoneyCard'
 import ArrowDiv from '../../components/Home/ArrowDiv'
@@ -57,7 +56,7 @@ const HomePage = () => {
         <RaisingMoneyCard img='/images/Home/NEW.svg' text='Up-to-date database and new investor listings every week.'/>
         <RaisingMoneyCard img='/images/Home/Check.svg' text='We verified an info by analyzing previous deals made by investors.'/>
         <RaisingMoneyCard img='/images/Home/Money Bag.svg' text='No «fake» VCs but real investors with available cash to invest.'/>
-        <img alt='manClimb' className="absolute bottom-0 right-12 -translate-y-1 md:-translate-y-0 md:right-8 lg:right-10 xl:right-0 w-32 md:w-auto h-auto" src="/images/Home/menClimbingImg.svg" />
+          <img alt='manClimb' className="absolute bottom-0 right-12 -translate-y-1 md:-translate-y-0 md:right-8 lg:right-10 xl:right-0 2xl:right-0 w-32 md:w-auto h-auto 2xl:h-72 2xl:w-72 manClimb" src="/images/Home/menClimbingImg.svg" />
       </div>
     </div>
     </section>
