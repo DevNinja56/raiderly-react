@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto">
           <div className="w-full pt-12 md:pt-20">
             <div className="w-full flex flex-wrap lg:flex-nowrap gap-x-4 justify-between gap-y-12 md:gap-y-20">
-              <div className="flex flex-col gap-7 w-full lg:w-60 xl:w-72 2xl:w-96">
+              <div className="flex flex-col gap-7 w-full lg:w-52 xl:w-72 2xl:w-96">
                 <div className="flex flex-col gap-y-5">
                 <img alt='_footerMan' className="h-20 w-20 2xl:h-40 2xl:w-40" src="/images/FooterMan.svg" />
                 <p className="text-xl 2xl:text-3xl font-medium text-mainTextColor">The best platform for finding investors and influencers.</p>
@@ -36,7 +36,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex w-full justify-between gap-0 md:gap-20 lg:gap-16 xl:gap-28 2xl:gap-0 lg:w-auto 2xl:w-2/6">
+              <div className="flex w-full justify-between gap-0 md:gap-20 lg:gap-16 xl:gap-28 2xl:gap-0 lg:w-auto 2xl:w-2/6 fotterDiv">
               <div className="gap-5 flex flex-col w-auto md:w-1/5 lg:w-auto">
                 <h1 className="text-lg 2xl:text-3xl font-semibold">For Founders</h1>
                 <ul className="font-medium flex flex-col gap-4 text-base 2xl:text-2xl">

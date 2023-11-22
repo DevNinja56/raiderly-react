@@ -43,7 +43,7 @@ const HomePage = () => {
 
     {/* Raising Money Section Start */}
 
-    <section id="_raisingMoney" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
+    <section id="_raisingMoney" className="w-full mb-16 md:mb-28 lg:mb-20 2xl:mb-60">
     <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col lg:flex-row items-center gap-8 md:gap-5">
       <div className="flex flex-col items-center lg:items-start gap-3 md:gap-5 w-full lg:w-3/6">
         <p className="text-orange-500 text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-bold">Raising money?</p>
@@ -65,7 +65,7 @@ const HomePage = () => {
 
     {/* Verified Investors Section Start */}
 
-    <section id="_verifiedSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
+    <section id="_verifiedSection" className="w-full mb-16 md:mb-28 lg:mb-48 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col gap-12 md:gap-16">
         <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-10 w-full">
           <div className="flex flex-col order-2 lg:order-none gap-11 lg:gap-8 items-center w-full lg:w-auto">
@@ -101,7 +101,7 @@ const HomePage = () => {
 
     {/* Craft Your Message Section Start */}
 
-    <section id="_craftYourMessage" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
+    <section id="_craftYourMessage" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col lg:flex-row items-center gap-0 lg:gap-10">
         <div className="flex flex-col gap-8 w-full lg:w-1/3">
           <div className="flex flex-col gap-5">
@@ -151,7 +151,7 @@ const HomePage = () => {
 
     {/* Pitch Investors & Influencers Section Start */}
 
-    <section id="_pitchInvestors&InfluencersSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
+    <section id="_pitchInvestors&InfluencersSection" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col items-center gap-8 md:gap-12">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-2xl md:text-4xl lg:text-6xl leading-snug md:leading-snug lg:leading-snug font-bold text-mainTextColor text-center">Pitch to all relevant <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> in one click</h1>
@@ -165,9 +165,9 @@ const HomePage = () => {
 
     {/* Slider Section Start */}
 
-    <section id="_sliderSection" className="w-full mb-16 md:mb-28 lg:mb-20 2xl:mb-60">
+    <section id="_sliderSection" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
       <div className="w-full lg:max-w-contentLargeScreenWidth mx-auto flex flex-col items-center gap-20">
-        <h1 className="max-w-contentSmallScreenWidth text-center font-bold text-2xl md:text-4xl lg:text-6xl text-mainTextColor leading-snug md:leading-snug lg:leading-snug">Trusted by 3,000<span className="text-mainColor">+</span> founders from all industries</h1>
+        <h1 className="max-w-contentSmallScreenWidth text-center font-bold text-2xl md:text-4xl lg:text-[55px] text-mainTextColor leading-snug md:leading-snug lg:leading-snug">Trusted by 3,000<span className="text-mainColor">+</span> founders from all industries</h1>
         <div className='w-full'>
         <HomeSlider />
         </div>
@@ -178,7 +178,7 @@ const HomePage = () => {
 
     {/* Work Out Of OutReach Section Start */}
 
-    <section id="_workOutOfOutReachSection" className="w-full mb-16 md:mb-28 lg:mb-40 2xl:mb-60">
+    <section id="_workOutOfOutReachSection" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
       <div className="w-full flex flex-col items-center gap-6 relative">
         <img alt='_workOutOf' className="left-0 top-0 w-auto 2xl:w-full" src="/images/Home/workOutOfOutReachSectionImg.svg" />
         <div onClick={() => navigate(ROUTES.SIGN_UP)}>
