@@ -24,11 +24,11 @@ const HomePage = () => {
 
     {/* Main Section Start */}
 
-    <main id="_Main" className="w-full mb-5 md:mb-20 2xl:mb-40">
+    <main id="_Main" className="w-full mb-5 md:mb-10 2xl:mb-40">
       <div className="w-full relative pt-28 lg:pt-28 2xl:pt-60 flex flex-col">
       <img alt='_home' className="absolute top-0 left-0 w-full object-cover min-h-max h-5/6 md:h-auto lg:h-vh140 2xl:h-v-110" src="/images/Home/HomePagePattern.svg"/>
       <div className="px-7 md:px-8 lg:px-12 xl:px-9 flex flex-col items-center z-10 relative mb-12">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-relaxed md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
+      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-eightyPixel font-extrabold text-center capitalize mb-4 lg:mb-1 leading-normal md:leading-relaxed lg:leading-relaxed">Find <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> for your Startup</h1>
       <p className="text-sm md:text-base lg:text-xl 2xl:text-2xl font-medium text-mainTextColor text-center mb-24 lg:mb-32">Founders use Raiderly to find perfect investors & Influencers for their companies</p>
       <div onClick={() => navigate(ROUTES.SIGN_UP)} className="relative">
       <Button padding='py-4 lg:py-5 px-6 lg:px-9' className='hover:bg-mainColor cursor-pointer text-sm md:text-base lg:text-xl bg-mainTextColor text-white' text='Get started for free' icon={<FaArrowRightLong />}/>
@@ -43,7 +43,7 @@ const HomePage = () => {
 
     {/* Raising Money Section Start */}
 
-    <section id="_raisingMoney" className="w-full mb-16 md:mb-28 lg:mb-20 2xl:mb-60">
+    <section id="_raisingMoney" className="w-full mb-12 md:mb-20 lg:mb-20 2xl:mb-60">
     <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col lg:flex-row items-center gap-8 md:gap-5">
       <div className="flex flex-col items-center lg:items-start gap-3 md:gap-5 w-full lg:w-3/6">
         <p className="text-orange-500 text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-bold">Raising money?</p>
@@ -65,7 +65,7 @@ const HomePage = () => {
 
     {/* Verified Investors Section Start */}
 
-    <section id="_verifiedSection" className="w-full mb-16 md:mb-28 lg:mb-48 2xl:mb-60">
+    <section id="_verifiedSection" className="w-full mb-12 md:mb-16 lg:mb-48 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col gap-12 md:gap-16">
         <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-10 w-full">
           <div className="flex flex-col order-2 lg:order-none gap-11 lg:gap-8 items-center w-full lg:w-auto">
@@ -87,7 +87,7 @@ const HomePage = () => {
           </div>
           <h1 className="text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug font-bold text-mainTextColor text-center lg:text-start">52,000+ Verified <span className="text-mainColor">Investors</span>, <span className="text-mainColor">Influencers</span> & <span className="text-mainColor">VC</span> funds</h1>
         </div>
-        <div className="w-full flex flex-col items-center gap-16">
+        <div className="w-full flex flex-col items-center gap-12 md:gap-16">
         <img alt='_vc' className="w-full hidden md:block" src="/images/Home/vcFundsImg.svg" />
         <img alt='_mob' className="w-full block md:hidden" src="/images/Home/mobileInvestorsMainImg.svg" />
         <div onClick={() => navigate(ROUTES.SIGN_UP)}>
@@ -101,7 +101,7 @@ const HomePage = () => {
 
     {/* Craft Your Message Section Start */}
 
-    <section id="_craftYourMessage" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
+    <section id="_craftYourMessage" className="w-full mb-12 md:mb-16 lg:mb-28 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col lg:flex-row items-center gap-0 lg:gap-10">
         <div className="flex flex-col gap-8 w-full lg:w-1/3">
           <div className="flex flex-col gap-5">
@@ -151,7 +151,7 @@ const HomePage = () => {
 
     {/* Pitch Investors & Influencers Section Start */}
 
-    <section id="_pitchInvestors&InfluencersSection" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
+    <section id="_pitchInvestors&InfluencersSection" className="w-full mb-16 md:mb-16 lg:mb-28 2xl:mb-60">
       <div className="max-w-contentSmallScreenWidth md:max-w-contentLargeScreenWidth mx-auto w-full flex flex-col items-center gap-8 md:gap-12">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-2xl md:text-4xl lg:text-6xl leading-snug md:leading-snug lg:leading-snug font-bold text-mainTextColor text-center">Pitch to all relevant <span className="text-mainColor">Investors</span> & <span className="text-mainColor">Influencers</span> in one click</h1>
@@ -165,8 +165,8 @@ const HomePage = () => {
 
     {/* Slider Section Start */}
 
-    <section id="_sliderSection" className="w-full mb-16 md:mb-28 lg:mb-28 2xl:mb-60">
-      <div className="w-full lg:max-w-contentLargeScreenWidth mx-auto flex flex-col items-center gap-20">
+    <section id="_sliderSection" className="w-full mb-16 md:mb-16 lg:mb-28 2xl:mb-60">
+      <div className="w-full lg:max-w-contentLargeScreenWidth mx-auto flex flex-col items-center gap-8 md:gap-12 lg:gap-20 px-4 lg:px-0">
         <h1 className="max-w-contentSmallScreenWidth text-center font-bold text-2xl md:text-4xl lg:text-[55px] text-mainTextColor leading-snug md:leading-snug lg:leading-snug">Trusted by 3,000<span className="text-mainColor">+</span> founders from all industries</h1>
         <div className='w-full'>
         <HomeSlider />
