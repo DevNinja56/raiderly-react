@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </div>
         <div onClick={() => navigate(ROUTES.SIGN_UP)}>
-        <HeaderButton className="hidden lg:block bg-white hover:bg-mainColor hover:border-mainColor cursor-pointer hover:text-white transition-all duration-200" text='Sign Up' icon="" padding='py-ten 2xl:py-5 px-5 2xl:px-10'/>
+        <HeaderButton className="hidden lg:block bg-white hover:bg-mainColor hover:border-mainColor cursor-pointer hover:text-white transition-all duration-200" text='Sign Up' icon="" padding='py-2 2xl:py-5 px-5 2xl:px-10'/>
         </div>
         <div className="block lg:hidden" onClick={() => setSideBar(!sideBar)}>
         <HeaderButton className='px-1 py-1 bg-mainTextColor text-white rounded-md' text='' padding='px-1 py-1 2xl:py-5 2xl:px-10' icon={<Menu />}/>
