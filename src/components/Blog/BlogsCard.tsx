@@ -9,7 +9,7 @@ interface propsTypes {
 
 const BlogsCard = ({ img, text }: propsTypes) => {
   return (
-    <NavLink to={ROUTES.SIGN_UP} className="w-full flex items-end relative h-auto 2xl:h-vh60 rounded-3xl pt-72">
+    <NavLink to={ROUTES.BLOG_DETAIL} className="w-full flex items-end relative h-auto 2xl:h-vh60 rounded-3xl pt-72">
       <div className="h-full w-full absolute top-0 left-0 overflow-hidden rounded-3xl">
         <img alt='_card' className="h-full w-full rounded-3xl hover:scale-[1.2] transition-all duration-500 cursor-pointer object-cover" src={img} />
       </div>
