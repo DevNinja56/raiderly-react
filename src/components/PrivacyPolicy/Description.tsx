@@ -1,18 +1,18 @@
 import React from 'react'
 
 const Description = () => {
-  return (
-    <div className='w-auto lg:w-10/12'>
+    return (
+        <div className='w-auto lg:w-10/12'>
             <div>
                 <p className="mb-7">Effective Date: February 13, 2023</p>
-                
+
                 <p>Hello and welcome to Raiderly! Thank you for signing up to use the Services. Please read these End
                     User Terms of Use <span className="font-semibold">("Terms" or "Terms of Use")</span> carefully before
                     using the www.raiderly.app website
                     operated by Bnfts, Inc. <span className="font-semibold">("Raiderly", "us", "we", and "our")</span>.</p>
                 <br />
                 <p>For purposes of these Terms, <span className="font-semibold">“you”</span> and <span
-                        className="font-semibold">“your”</span> means you as the user of the Service. Some specific
+                    className="font-semibold">“your”</span> means you as the user of the Service. Some specific
                     definitions for capitalized terms are set out in Exhibit A of these Terms.</p>
                 <br />
                 <p>You acknowledge that these Terms, along with our Privacy Policy, govern your access and use of the
@@ -212,8 +212,8 @@ const Description = () => {
             <div>
                 <h1 className="font-semibold">10. Arbitration</h1>
                 <p>You and we both agree to resolve disputes related to your use of the Services or these Terms <span
-                        className="font-semibold"> (each, a
-                        “Claim”) </span>in binding arbitration instead of court, except that either party may bring suit
+                    className="font-semibold"> (each, a
+                    “Claim”) </span>in binding arbitration instead of court, except that either party may bring suit
                     in court
                     to enjoin the infringement or other misuse of intellectual property rights.
                     Arbitration Definition. Arbitration does not involve a judge or jury. Instead, a neutral person
@@ -321,8 +321,8 @@ const Description = () => {
                     and/or Users, which may include names, contact information, Social Security numbers, compensation
                     information, and other sensitive, proprietary, personal, or identifying information.</p>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Description

@@ -1,16 +1,17 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../../constant/route'
+import { NavLink } from 'react-router-dom'
 
 interface propsTypes {
-    className: string,
+  className: string,
 }
 
-const Logo = ({className} : propsTypes) => {
-  const navigate = useNavigate()
+const Logo = ({ className }: propsTypes) => {
 
   return (
-    <img onClick={() => navigate(ROUTES.HOMEPAGE)} className={`${className} h-auto w-auto 2xl:h-24 cursor-pointer`} src="/images/Logo.svg" alt="logo" />
+    <NavLink to={ROUTES.HOMEPAGE}>
+      <img className={`${className} h-auto w-auto 2xl:h-24 cursor-pointer`} src="/images/Logo.svg" alt="logo" />
+    </NavLink>
   )
 }
 

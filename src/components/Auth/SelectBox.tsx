@@ -6,7 +6,7 @@ import { useLocation } from 'react-router';
 const customStyles: StylesConfig = {
   control: (provided) => ({
     ...provided,
-    cursor:"pointer",
+    cursor: "pointer",
     backgroundColor: 'white',
     border: "1px solid rgba(0, 0, 0, 0.25)",
     borderRadius: '61px',
@@ -14,7 +14,7 @@ const customStyles: StylesConfig = {
     paddingBottom: '10px',
     paddingLeft: '20px',
     paddingRight: '20px',
-    width:"100%",
+    width: "100%",
   }),
   indicatorSeparator: (provided) => ({
     ...provided,
@@ -29,24 +29,24 @@ const customStyles: StylesConfig = {
   }),
   menu: (provided) => ({
     ...provided,
-    marginTop:"5px",
-    borderRadius:"14px",
+    marginTop: "5px",
+    borderRadius: "14px",
   }),
   menuList: (provided) => ({
     ...provided,
     paddingTop: 0,
     paddingBottom: 0,
-    borderRadius:"14px",
+    borderRadius: "14px",
   }),
-  option: (provided,state) => ({
+  option: (provided, state) => ({
     ...provided,
-    paddingTop:"20px",
-    paddingLeft:"30px",
-    paddingBottom:"20px",
-    fontWeight:"600",
+    paddingTop: "20px",
+    paddingLeft: "30px",
+    paddingBottom: "20px",
+    fontWeight: "600",
     backgroundColor: state.isSelected ? "#FF74251A" : "white",
-    color:"black",
-    cursor:"pointer",
+    color: "black",
+    cursor: "pointer",
   })
 };
 
@@ -56,28 +56,28 @@ const options = [
 ];
 
 const DropdownIndicator: React.FC<DropdownIndicatorProps> = props => {
-    return (
-      <components.DropdownIndicator {...props}>
-        <ArrowDown />
-      </components.DropdownIndicator>
-    );
-  };
+  return (
+    <components.DropdownIndicator {...props}>
+      <ArrowDown />
+    </components.DropdownIndicator>
+  );
+};
 
 const SelectBox = () => {
   const location = useLocation();
-  
+
   const userType = location.pathname.includes('investors') ? 'Investors' : 'Influencers';
 
   const defaultValue = options.find(option => option.value === userType);
   return (
     <div className='w-7/12'>
-    <Select
-      options={options}
-      placeholder="Select Option"
-      styles={customStyles}
-      components={{ DropdownIndicator }}
-      defaultValue={defaultValue}
-    />
+      <Select
+        options={options}
+        placeholder="Select Option"
+        styles={customStyles}
+        components={{ DropdownIndicator }}
+        defaultValue={defaultValue}
+      />
     </div>
   );
 };

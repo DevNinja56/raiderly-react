@@ -6,12 +6,14 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const MainLayout = ({children} : LayoutProps) => {
+const MainLayout = ({ children }: LayoutProps) => {
   return (
     <>
-    <Header></Header>
-    {children}
-    <Footer></Footer>
+      <Header />
+      <main id='main'>
+        {children}
+      </main>
+      <Footer />
     </>
   )
 }

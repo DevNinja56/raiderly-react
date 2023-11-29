@@ -1,34 +1,34 @@
 import React from 'react'
 
 const Description = () => {
-  return (
-    <div className='w-auto lg:w-10/12'>
-        <div>
-            <p>Effective Date: February 13, 2023</p>
-            <br />
-            <p>Hello and welcome to Raiderly! Thank you for signing up to use the Services. Please read these End
-                User Terms of Use <span className="font-semibold">("Terms" or "Terms of Use")</span> carefully before
-                using the www.raiderly.app website
-                operated by Bnfts, Inc. <span className="font-semibold">("Raiderly", "us", "we", and "our")</span>.</p>
+    return (
+        <div className='w-auto lg:w-10/12'>
+            <div>
+                <p>Effective Date: February 13, 2023</p>
+                <br />
+                <p>Hello and welcome to Raiderly! Thank you for signing up to use the Services. Please read these End
+                    User Terms of Use <span className="font-semibold">("Terms" or "Terms of Use")</span> carefully before
+                    using the www.raiderly.app website
+                    operated by Bnfts, Inc. <span className="font-semibold">("Raiderly", "us", "we", and "our")</span>.</p>
                 <br />
                 <p>For purposes of these Terms, <span className="font-semibold">“you”</span> and <span
-                        className="font-semibold">“your”</span> means you as the user of the Service. Some specific
+                    className="font-semibold">“your”</span> means you as the user of the Service. Some specific
                     definitions for capitalized terms are set out in Exhibit A of these Terms.</p>
                 <br />
                 <p>You acknowledge that these Terms, along with our Privacy Policy, govern your access and use of the
                     Services. By accessing or using the Services you agree to be bound by these Terms. If you disagree
                     with any part of these Terms, then you do not have permission to access the Services.</p>
-        </div>
-        <br />
-        <div>
-            <h1 className="font-semibold">1: Changes to these Terms</h1>
+            </div>
             <br />
-            <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By
-                continuing to access or use our Services after any revisions become effective, you agree to be bound
-                by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the
-                Services.
-            </p>
-        </div>
+            <div>
+                <h1 className="font-semibold">1: Changes to these Terms</h1>
+                <br />
+                <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By
+                    continuing to access or use our Services after any revisions become effective, you agree to be bound
+                    by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the
+                    Services.
+                </p>
+            </div>
             <br />
             <div className="mb-4">
                 <h1 className="font-semibold mb-3">2: Service Terms</h1>
@@ -311,8 +311,8 @@ const Description = () => {
                     and/or Users, which may include names, contact information, Social Security numbers, compensation
                     information, and other sensitive, proprietary, personal, or identifying information.</p>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Description

@@ -1,17 +1,17 @@
 import React from 'react'
 
 interface buttonProps {
-    className: string;
-    padding: string;
-    text: string;
-    icon: React.ReactElement | string;
+  className: string;
+  padding: string;
+  text: string;
+  icon: React.ReactElement | string;
 }
 
-const HeaderButton = ({className, text, icon, padding} : buttonProps) => {
+const HeaderButton = ({ className, text, icon, padding }: buttonProps) => {
   return (
     <button className={`${className} ${padding} border border-mainTextColor text-mainTextColor rounded-3xl 2xl:rounded-full font-medium text-base 2xl:text-xl`}>
-        {text}
-        {icon}
+      {text}
+      {icon}
     </button>
   )
 }

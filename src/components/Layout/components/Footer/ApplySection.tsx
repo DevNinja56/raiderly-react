@@ -1,26 +1,25 @@
 import React from 'react'
 import { ROUTES } from '../../../../constant/route'
-import { useNavigate } from 'react-router'
 import { FaArrowRightLong } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 
 const ApplySection = () => {
-  const navigate = useNavigate()
   return (
     <div className="max-w-contentSmallScreenWidth md:max-w-none md:w-full lg:max-w-contentLargeScreenWidth mx-auto md:mx-0 lg:mx-auto flex items-end overflow-hidden pl-0 md:pl-4 lg:px-0">
-        <div className="w-full md:w-9/12 lg:w-3/5 2xl:w-11/12 h-56 md:h-80 lg:h-96 relative bg-black bg-opacity-95 rounded-none lg:rounded-xl flex items-center justify-center">
-          <img alt='_footer' className="h-full w-full absolute left-0 top-0" src="/images/FooterLineImg.svg" />
-          <img alt='_rope' className="absolute right-8 md:right-12 h-7/12 w-7/12 md:h-auto md:w-auto" src="/images/Home/rope.svg" />
-          <div className="flex flex-col items-center gap-8 md:gap-y-20 w-full z-10">
+      <div className="w-full md:w-9/12 lg:w-3/5 2xl:w-11/12 h-56 md:h-80 lg:h-96 relative bg-black bg-opacity-95 rounded-none lg:rounded-xl flex items-center justify-center">
+        <img alt='_footer' className="h-full w-full absolute left-0 top-0" src="/images/FooterLineImg.svg" />
+        <img alt='_rope' className="absolute right-8 md:right-12 h-7/12 w-7/12 md:h-auto md:w-auto" src="/images/Home/rope.svg" />
+        <div className="flex flex-col items-center gap-8 md:gap-y-20 w-full z-10">
           <h1 className="text-white text-center font-bold text-xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed 2xl:leading-relaxed">Let’s discuss make <br />something <span className="text-orange-500 italic">cool</span> together</h1>
-          <p onClick={() => navigate(ROUTES.SIGN_UP)} className="flex items-center gap-3 text-white font-semibold text-base md:text-lg hover:text-orange-500 transition-all duration-500 cursor-pointer group border-b-2 border-black border-opacity-0 pb-2 hover:border-orange-500">
-          Apply For Meeting
-          <FaArrowRightLong className='fill-white stroke-white group-hover:stroke-mainColor group-hover:fill-mainColor text-mainColor transition-all duration-300'/>
-          </p>
-          </div>
+          <NavLink to={ROUTES.SIGN_UP} className="flex items-center gap-3 text-white font-semibold text-base md:text-lg hover:text-orange-500 transition-all duration-500 cursor-pointer group border-b-2 border-black border-opacity-0 pb-2 hover:border-orange-500">
+            Apply For Meeting
+            <FaArrowRightLong className='fill-white stroke-white group-hover:stroke-mainColor group-hover:fill-mainColor text-mainColor transition-all duration-300' />
+          </NavLink>
         </div>
-        <div className="hidden items-end  md:flex">
-            <img alt='_ropeMan' className="w-11/12 lg:w-auto" src="/images/Home/ropeMan.svg" />
-        </div>
+      </div>
+      <div className="hidden items-end  md:flex">
+        <img alt='_ropeMan' className="w-11/12 lg:w-auto" src="/images/Home/ropeMan.svg" />
+      </div>
     </div>
   )
 }

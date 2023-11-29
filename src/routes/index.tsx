@@ -1,68 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
 import MainLayout from '../Layout';
-import Prices from '../pages/Pricing';
-import { ROUTES } from '../constant/route';
-import FAQ from '../pages/FAQ';
-import Blog from '../pages/Blog';
-import SignIn from '../pages/SIgnIn';
-import SignUp from '../pages/SignUp';
-import ContactUs from '../pages/ContactUs';
-import BlogDetail from '../pages/BlogDetail';
 import ScrollToTop from '../hooks/ScrollToTop';
-import TermsAndCondition from '../pages/TermsAndCondtion';
-import PrivacyPolicy from '../pages/PrivacyPolicy';
+import { ROUTE_LIST } from '../constant/route';
 
 const MainRouter = () => {
   const showMainLayout = true
 
-  const renderMainLayout = (element : React.ReactElement) => (showMainLayout ? <MainLayout>{element}</MainLayout> : element);
+  const renderMainLayout = (element: React.ReactElement) => (showMainLayout ? <MainLayout>{element}</MainLayout> : element);
 
   return (
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route
-          path={ROUTES.HOMEPAGE}
-          element={renderMainLayout(<HomePage />)}
-        />
-        <Route
-          path={ROUTES.PRICING}
-          element={renderMainLayout(<Prices />)}
-        />
-        <Route
-          path={ROUTES.FAQ}
-          element={renderMainLayout(<FAQ />)}
-        />
-        <Route
-          path={ROUTES.BLOG}
-          element={renderMainLayout(<Blog />)}
-        />
-        <Route
-          path={ROUTES.BLOG_DETAIL}
-          element={renderMainLayout(<BlogDetail />)}
-        />
-        <Route
-          path={ROUTES.TERMSANDCONDITION}
-          element={renderMainLayout(<TermsAndCondition />)}
-        />
-        <Route
-          path={ROUTES.PRIVACY_POLICY}
-          element={renderMainLayout(<PrivacyPolicy />)}
-        />
-        <Route
-          path={ROUTES.SIGN_IN}
-          element={<SignIn />}
-        />
-        <Route
-          path={ROUTES.SIGN_UP}
-          element={<SignUp />}
-        />
-        <Route
-          path={ROUTES.CONTACT_US}
-          element={<ContactUs />}
-        />
+        {ROUTE_LIST.map(({ link, element: Component, isHeader = true }) => (
+          <Route key={'route--' + link}
+            path={link}
+            element={isHeader ? renderMainLayout(<Component />) : <Component />}
+          />
+        ))}
       </Routes>
     </Router>
   );
