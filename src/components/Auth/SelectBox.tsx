@@ -1,20 +1,24 @@
 import React from 'react';
 import Select, { StylesConfig, type DropdownIndicatorProps, components } from 'react-select';
-import ArrowDown from './icons/ArrowDown';
+import ArrowDown from '../svg/ArrowDown';
 import { useLocation } from 'react-router';
 
 const customStyles: StylesConfig = {
-  control: (provided) => ({
+  control: (provided,state) => ({
     ...provided,
     cursor: "pointer",
     backgroundColor: 'white',
-    border: "1px solid rgba(0, 0, 0, 0.25)",
     borderRadius: '61px',
     paddingTop: '10px',
     paddingBottom: '10px',
     paddingLeft: '20px',
     paddingRight: '20px',
     width: "100%",
+    boxShadow: state.isFocused ? "orange" : "",
+    border: state.isFocused ? "1px solid #FF7425" : "1px solid rgba(0, 0, 0, 0.25)",
+    '&:hover': {
+      border: state.isFocused ? "1px solid #FF7425" : "1px solid rgba(0, 0, 0, 0.25)"
+    },
   }),
   indicatorSeparator: (provided) => ({
     ...provided,

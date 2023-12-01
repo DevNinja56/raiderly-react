@@ -6,7 +6,7 @@ import SignText from '../../components/Auth/SignText'
 import Input from '../../components/Auth/Input'
 import CheckAcount from '../../components/Auth/CheckAcount'
 import { ROUTES } from '../../constant/route'
-import Cross from '../../components/Auth/icons/Cross'
+import Cross from '../../components/svg/Cross'
 import SignInWithGoogle from '../../components/Auth/SignInWithGoogle'
 import { NavLink } from 'react-router-dom'
 
@@ -35,7 +35,7 @@ const SignUp = () => {
                                             <CheckAcount account='Have an Account ?' type='Sign in' />
                                         </NavLink>
                                     </div>
-                                    <Input label='Enter your username or email address' placeHolder="Username or email address" />
+                                    <Input label='Enter your email address' placeHolder="Email Address" />
                                     <div className="grid grid-cols-2 gap-4">
                                         <Input label='User Name' placeHolder='User name' />
                                         <Input label='Contact Number' placeHolder='Contact Number' />

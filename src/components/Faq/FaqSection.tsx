@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ArrowDown from './icons/ArrowDown';
+import ArrowDown from '../svg/ArrowDownv2';
 import Heading from './Heading';
 import { faqItems } from './data';
 

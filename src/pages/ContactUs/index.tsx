@@ -5,7 +5,7 @@ import RightManImage from '../../components/Auth/RightMan'
 import Input from '../../components/Auth/Input'
 import { ROUTES } from '../../constant/route'
 import SelectBox from '../../components/Auth/SelectBox'
-import Cross from '../../components/Auth/icons/Cross'
+import Cross from '../../components/svg/Cross'
 import { NavLink } from 'react-router-dom'
 
 const ContactUs = () => {
@@ -33,7 +33,7 @@ const ContactUs = () => {
                                     </div>
                                     <Input label='Full Name' placeHolder="full name" />
                                     <Input label='Email Address' placeHolder='email address' />
-                                    <Input label='Message' placeHolder='Write your message...' />
+                                    <Input className='pb-20 h-auto rounded-xl pt-3' label='Message' placeHolder='Write your message...' />
                                     <Button padding='py-4 2xl:py-6' className='w-full hover:bg-mainTextColor bg-mainColor text-white text-xl 2xl:text-3xl font-medium flex justify-center mb-12' text='Send Message' icon="" />
                                 </div>
                             </div>

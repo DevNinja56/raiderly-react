@@ -1,7 +1,7 @@
 import React from 'react'
 import Input from '../components/Auth/Input'
 import Button from '../components/Common/Button'
-import Cross from '../components/Auth/icons/Cross'
+import Cross from '../components/svg/Cross'
 
 interface ForgotPassProps {
   setShowForgotModal: React.Dispatch<React.SetStateAction<boolean>>;

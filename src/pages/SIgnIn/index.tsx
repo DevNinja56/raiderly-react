@@ -8,7 +8,7 @@ import CheckAcount from '../../components/Auth/CheckAcount'
 import { NavLink } from 'react-router-dom'
 import { ROUTES } from '../../constant/route'
 import ForgotPass from '../../modal/ForgotPass'
-import Cross from '../../components/Auth/icons/Cross'
+import Cross from '../../components/svg/Cross'
 import SignInWithGoogle from '../../components/Auth/SignInWithGoogle'
 
 const SignIn = () => {

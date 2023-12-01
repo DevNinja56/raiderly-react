@@ -3,9 +3,10 @@ import React from 'react'
 interface propsTypes {
   label: string;
   placeHolder: string;
+  className?: string
 }
 
-const Input = ({ label, placeHolder }: propsTypes) => {
+const Input = ({ label, placeHolder, className }: propsTypes) => {
   return (
     <div>
       <p
@@ -14,7 +15,7 @@ const Input = ({ label, placeHolder }: propsTypes) => {
 
       </p>
       <input type="text" placeholder={placeHolder}
-        className="w-full p-3 pl-5 2xl:p-4 h-14 rounded-full text-xs 2xl:text-xl border outline-lightOrangeColor transition-all duration-300 max-md:h-11 2xl:h-20" />
+        className={`${className} w-full p-3 pl-5 2xl:p-4 h-14 rounded-full text-xs 2xl:text-xl border focus:border-mainColor outline-none transition-all duration-300 max-md:h-11 2xl:h-20`} />
     </div>
   )
 }

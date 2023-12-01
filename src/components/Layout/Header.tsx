@@ -4,7 +4,7 @@ import Logo from '../Common/MainLogo'
 import HeaderButton from '../Common/HeaderButton'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../constant/route'
-import Menu from './icons/Menu'
+import Menu from '../svg/Menu'
 
 const Header = () => {
 

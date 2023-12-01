@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderButton from '../Common/HeaderButton';
-import Cross from '../Layout/icons/Cross';
+import Cross from '../svg/Crossv2';
 import Logo from '../Common/MainLogo';
 import { ROUTES } from '../../constant/route';
 import { NavLink } from 'react-router-dom';
